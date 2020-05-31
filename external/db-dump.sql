@@ -39,7 +39,7 @@ WITH (oids = false);
 --
 CREATE TABLE public.account (
     id bigint NOT NULL,
-    email varchar(1) NOT NULL,
+    email varchar(100) NOT NULL,
     name varchar(30) NOT NULL,
     avatar varchar(255),
     created timestamp(0) without time zone DEFAULT now() NOT NULL
@@ -74,6 +74,39 @@ CREATE SEQUENCE public.account_seq
     NO MAXVALUE
     NO MINVALUE
     CACHE 1;
+--
+-- Data for table public.category (OID = 16403) (LIMIT 0,10)
+--
+INSERT INTO category (id, name, url, artcles)
+VALUES (1, 'Fermentum', '/fermentum', 1);
+
+INSERT INTO category (id, name, url, artcles)
+VALUES (2, 'Ornare', '/ornare', 2);
+
+INSERT INTO category (id, name, url, artcles)
+VALUES (3, 'Elit', '/elit', 14);
+
+INSERT INTO category (id, name, url, artcles)
+VALUES (4, 'Magna', '/magna', 1);
+
+INSERT INTO category (id, name, url, artcles)
+VALUES (5, 'Mattis', '/mattis', 4);
+
+INSERT INTO category (id, name, url, artcles)
+VALUES (6, 'Enim', '/enim', 14);
+
+INSERT INTO category (id, name, url, artcles)
+VALUES (7, 'Lobortis', '/lobortis', 1);
+
+INSERT INTO category (id, name, url, artcles)
+VALUES (8, 'Blandit', '/blandit', 11);
+
+INSERT INTO category (id, name, url, artcles)
+VALUES (9, 'Nonummy', '/nonummy', 18);
+
+INSERT INTO category (id, name, url, artcles)
+VALUES (10, 'Senectus', '/senectus', 1);
+
 --
 -- Definition for index comment_idx (OID = 16458) : 
 --
@@ -111,12 +144,6 @@ ALTER TABLE ONLY account
     ADD CONSTRAINT account_pkey
     PRIMARY KEY (id);
 --
--- Definition for index account_email_key (OID = 16428) : 
---
-ALTER TABLE ONLY account
-    ADD CONSTRAINT account_email_key
-    UNIQUE (email);
---
 -- Definition for index comment_pkey (OID = 16437) : 
 --
 ALTER TABLE ONLY comment
@@ -140,6 +167,12 @@ ALTER TABLE ONLY comment
 ALTER TABLE ONLY comment
     ADD CONSTRAINT comment_fk1
     FOREIGN KEY (id_article) REFERENCES article(id) ON UPDATE CASCADE ON DELETE RESTRICT;
+--
+-- Definition for index account_email_key (OID = 16461) : 
+--
+ALTER TABLE ONLY account
+    ADD CONSTRAINT account_email_key
+    UNIQUE (email);
 --
 -- Data for sequence public.comment_seq (OID = 16439)
 --

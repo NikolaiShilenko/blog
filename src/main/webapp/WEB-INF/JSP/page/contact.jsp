@@ -13,25 +13,25 @@
 		</div>
 		<div class="row">
 			<div class="small-12 medium-8 columns small-centered">
-				<label> <input type="text" required name="name"
-					placeholder="Your name"> <span class="form-error">
-						Name is required. </span>
+				<label> 
+					<input type="text" required name="name" placeholder="Your name"> 
+					<span class="form-error"> Name is required.</span>
 				</label>
 			</div>
 		</div>
 		<div class="row">
 			<div class="small-12 medium-8 columns small-centered">
-				<label> <input type="email" required name="email"
-					placeholder="Your email"> <span class="form-error">
-						Email is invalid. </span>
+				<label> 
+					<input type="email" required name="email" placeholder="Your email"> 
+					<span class="form-error"> Email is invalid. </span>
 				</label>
 			</div>
 		</div>
 		<div class="row">
 			<div class="small-12 medium-8 columns small-centered">
-				<label> <textarea name="text" required
-						style="height: 120px;" placeholder="Your message"></textarea> <span
-					class="form-error"> Message is required. </span>
+				<label> 
+					<textarea name="text" required style="height: 120px;" placeholder="Your message"></textarea> 
+					<span class="form-error"> Message is required. </span>
 				</label>
 			</div>
 		</div>

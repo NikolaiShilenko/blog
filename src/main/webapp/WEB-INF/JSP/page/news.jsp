@@ -19,8 +19,7 @@
 	</div>
 </div>
 <div class="article thumbnail">
-	<a href="/article"><img src="http://placehold.it/1000x400"
-		alt="Donec venenatis vulputate lorem."></a>
+	<a href="/article"><img src="http://placehold.it/1000x400" alt="Donec venenatis vulputate lorem."></a>
 	<div class="data">
 		<h3>
 			<a href="/article">Donec venenatis vulputate lorem.</a>
@@ -38,12 +37,10 @@
 	</div>
 </div>
 <div class="article thumbnail">
-	<a href="/article"><img src="http://placehold.it/1000x400"
-		alt="Praesent ac massa at ligula laoreet iaculis."></a>
+	<a href="/article"><img src="http://placehold.it/1000x400" alt="Praesent ac massa at ligula laoreet iaculis."></a>
 	<div class="data">
 		<h3>
-			<a href="/article">Praesent ac massa at ligula laoreet
-				iaculis.</a>
+			<a href="/article">Praesent ac massa at ligula laoreet iaculis.</a>
 		</h3>
 		<ul class="vertical large-horizontal menu">
 			<li><i class="fi-folder"></i><a href="#">Phasellus</a></li>
@@ -53,15 +50,12 @@
 		</ul>
 		<hr>
 		<div class="desc">
-			<p>Praesent ac massa at ligula laoreet iaculis. Praesent ac massa
-				at ligula laoreet iaculis. Praesent ac massa at ligula laoreet
-				iaculis. Praesent ac massa at ligula laoreet iaculis. Praesent ac
-				massa at ligula laoreet iaculis.</p>
+			<p>Praesent ac massa at ligula laoreet iaculis. Praesent ac massa at ligula laoreet iaculis. Praesent ac massa at ligula laoreet iaculis.
+				Praesent ac massa at ligula laoreet iaculis. Praesent ac massa at ligula laoreet iaculis.</p>
 		</div>
 	</div>
 </div>
-<ul class="pagination text-center" role="navigation"
-	aria-label="Pagination">
+<ul class="pagination text-center" role="navigation" aria-label="Pagination">
 	<li class="pagination-previous"><a href="#" aria-label="Previous">Previous</a></li>
 	<li><a href="#" aria-label="Page 1">1</a></li>
 	<li class="ellipsis"></li>

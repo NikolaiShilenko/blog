@@ -7,6 +7,8 @@ import javax.servlet.annotation.WebListener;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import net.shilenko.blog.service.impl.ServiceManager;
+
 /**
  * @author Nikolay Shilenko
  *
@@ -17,11 +19,13 @@ public class ApplicationListener implements ServletContextListener {
 
 	@Override
 	public void contextInitialized(ServletContextEvent sce) {
-		LOGGER.info("Application started");
+		ServiceManager.getInstance(sce.getServletContext());
+		LOGGER.info("Application is started");
 	}
 
 	@Override
 	public void contextDestroyed(ServletContextEvent sce) {
-		LOGGER.info("Application destroyed");
+		ServiceManager.getInstance(sce.getServletContext()).destroy();
+		LOGGER.info("Application is destroyed");
 	}
 }

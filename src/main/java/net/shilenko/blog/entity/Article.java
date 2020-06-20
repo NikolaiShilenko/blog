@@ -9,9 +9,7 @@ import org.apache.commons.lang.StringUtils;
  *
  */
 public class Article extends AbstractEntity<Long> {
-
-	private static final long serialVersionUID = 2740845323193257309L;
-	
+	private static final long serialVersionUID = -161085554582629931L;
 	private String title;
 	private String url;
 	private String logo;
@@ -75,16 +73,14 @@ public class Article extends AbstractEntity<Long> {
 	public void setComments(int comments) {
 		this.comments = comments;
 	}
-	
-	public String getArticleLink() {
-		return "/article/" + getId() + url;
+	public String getArticleLink(){
+		return "/article/"+getId()+url;
 	}
-	
-	public String getShortTitle() {
+	public String getShortTitle(){
 		if(StringUtils.length(title) > 20) {
-			return title.substring(0, 17) + "...";
+			return title.substring(0, 17)+"...";
 		}
-		else {
+		else{
 			return title;
 		}
 	}

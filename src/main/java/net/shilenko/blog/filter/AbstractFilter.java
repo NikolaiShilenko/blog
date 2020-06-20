@@ -19,9 +19,7 @@ import org.slf4j.LoggerFactory;
  *
  */
 public abstract class AbstractFilter implements Filter {
-	
 	protected final Logger LOGGER = LoggerFactory.getLogger(getClass());
-	
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
 	}

@@ -15,8 +15,8 @@ import net.shilenko.blog.controller.AbstractController;
  */
 @WebServlet("/article")
 public class ArticleController extends AbstractController {
-	private static final long serialVersionUID = 6255957835904618339L;
-	
+	private static final long serialVersionUID = 7089871282763553056L;
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		forwardToPage("article.jsp", req, resp);

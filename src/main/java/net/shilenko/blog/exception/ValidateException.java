@@ -5,8 +5,7 @@ package net.shilenko.blog.exception;
  *
  */
 public class ValidateException extends Exception {
-
-	private static final long serialVersionUID = -532228620585093097L;
+	private static final long serialVersionUID = 5113543063260048361L;
 
 	public ValidateException(String message) {
 		super(message);
@@ -23,5 +22,4 @@ public class ValidateException extends Exception {
 	public ValidateException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
 		super(message, cause, enableSuppression, writableStackTrace);
 	}
-
 }

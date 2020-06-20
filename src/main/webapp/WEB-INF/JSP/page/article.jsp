@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
-
 <div class="article thumbnail">
 	<img src="http://placehold.it/1000x400" alt="Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.">
 	<div class="data">
@@ -12,7 +11,8 @@
 		</ul>
 		<hr>
 		<div class="content">
-			<p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.</p>
+			<p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,
+				lorem.</p>
 			<p>Pellentesque libero tortor, tincidunt et, tincidunt eget, semper nec, quam. Ut tincidunt tincidunt erat. Praesent nec nisl a purus
 				blandit viverra quis gravida magna mi a libero. Morbi ac felis.</p>
 			<p>Morbi ac felis. Sed augue ipsum, egestas nec, vestibulum et, malesuada adipiscing, dui.</p>

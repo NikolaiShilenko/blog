@@ -6,11 +6,9 @@ import java.util.List;
  * @author Nikolay Shilenko
  *
  */
-public class Items<T> extends AbstractModel  {
-	
+public class Items<T> extends AbstractModel{
 	private List<T> items;
 	private int count;
-	
 	public List<T> getItems() {
 		return items;
 	}
@@ -24,3 +22,4 @@ public class Items<T> extends AbstractModel  {
 		this.count = count;
 	}
 }
+

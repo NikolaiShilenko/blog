@@ -13,7 +13,7 @@ public class AppUtil {
 		try (InputStream in = AppUtil.class.getClassLoader().getResourceAsStream(classPathUrl)) {
 			props.load(in);
 		} catch (IOException e) {
-			throw new IllegalArgumentException("Can't load properties from classpath : + classPathUrl, e");
+			throw new IllegalArgumentException("Can't load properties from classpath:" + classPathUrl, e);
 		}
 	}
 }

@@ -5,8 +5,7 @@ package net.shilenko.blog.exception;
  *
  */
 public class ApplicationException extends RuntimeException {
-
-	private static final long serialVersionUID = -2317088551628465654L;
+	private static final long serialVersionUID = -3180716741910924439L;
 
 	public ApplicationException(String message) {
 		super(message);
@@ -20,9 +19,7 @@ public class ApplicationException extends RuntimeException {
 		super(message, cause);
 	}
 
-	public ApplicationException(String message, Throwable cause, boolean enableSuppression,
-			boolean writableStackTrace) {
+	public ApplicationException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
 		super(message, cause, enableSuppression, writableStackTrace);
 	}
-
 }

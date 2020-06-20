@@ -5,13 +5,10 @@ package net.shilenko.blog.entity;
  *
  */
 public class Category extends AbstractEntity<Integer> {
-
-	private static final long serialVersionUID = 1796941283461887104L;
-	
+	private static final long serialVersionUID = -2731154125911204418L;
 	private String name;
 	private String url;
 	private int articles;
-
 	public String getName() {
 		return name;
 	}

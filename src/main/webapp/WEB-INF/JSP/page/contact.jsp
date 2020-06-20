@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
-
 <div class="callout">
 	<h3 class="text-center">Contact form</h3>
 	<hr />
@@ -15,7 +14,7 @@
 			<div class="small-12 medium-8 columns small-centered">
 				<label> 
 					<input type="text" required name="name" placeholder="Your name"> 
-					<span class="form-error"> Name is required.</span>
+					<span class="form-error"> Name is required. </span>
 				</label>
 			</div>
 		</div>

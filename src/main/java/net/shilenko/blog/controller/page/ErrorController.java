@@ -15,7 +15,6 @@ import net.shilenko.blog.controller.AbstractController;
  */
 @WebServlet("/error")
 public class ErrorController extends AbstractController {
-	
 	private static final long serialVersionUID = 5370467887808025258L;
 
 	@Override

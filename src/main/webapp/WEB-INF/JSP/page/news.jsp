@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
-
 <div class="article thumbnail">
 	<a href="/article"><img src="http://placehold.it/1000x400" alt="Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem."></a>
 	<div class="data">
@@ -50,8 +49,8 @@
 		</ul>
 		<hr>
 		<div class="desc">
-			<p>Praesent ac massa at ligula laoreet iaculis. Praesent ac massa at ligula laoreet iaculis. Praesent ac massa at ligula laoreet iaculis.
-				Praesent ac massa at ligula laoreet iaculis. Praesent ac massa at ligula laoreet iaculis.</p>
+			<p>Praesent ac massa at ligula laoreet iaculis. Praesent ac massa at ligula laoreet iaculis. Praesent ac massa at ligula laoreet
+				iaculis. Praesent ac massa at ligula laoreet iaculis. Praesent ac massa at ligula laoreet iaculis.</p>
 		</div>
 	</div>
 </div>

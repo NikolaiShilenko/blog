@@ -19,23 +19,22 @@ import net.shilenko.blog.util.AppUtil;
 public class ServiceManager {
 	public static ServiceManager getInstance(ServletContext context) {
 		ServiceManager instance = (ServiceManager) context.getAttribute(SERVICE_MANAGER);
-		if(instance == null) {
+		if (instance == null) {
 			instance = new ServiceManager(context);
 			context.setAttribute(SERVICE_MANAGER, instance);
 		}
 		return instance;
 	}
-	
 	public void destroy() {
 		try {
 			dataSource.close();
 		} catch (SQLException e) {
-			LOGGER.error("Close dataSource failed: " + e.getMessage(), e);
+			LOGGER.error("Close dataSource failed: "+e.getMessage(), e);
 		}
 		
-		LOGGER.info("ServiceManager instance is destroyed");
+		LOGGER.info("ServiceManager instance destroyed");
+		
 	}
-	
 	public BusinessService getBusinessService() {
 		return businessService;
 	}
@@ -49,16 +48,15 @@ public class ServiceManager {
 	
 	final Properties applicationProperties = new Properties();
 	final BasicDataSource dataSource;
-	final BusinessService businessService; 
-	
+	final BusinessService businessService;
 	private ServiceManager(ServletContext context) {
 		AppUtil.loadProperties(applicationProperties, "application.properties");
 		dataSource = createBasicDataSource();
-		businessService = new BusinessServiceImpl();
-		LOGGER.info("ServiceManager instance is created");
+		businessService = new BusinessServiceImpl(this);
+		LOGGER.info("ServiceManager instance created");
 	}
 	
-	private BasicDataSource createBasicDataSource() {
+	private BasicDataSource createBasicDataSource(){
 		BasicDataSource ds = new BasicDataSource();
 		ds.setDefaultAutoCommit(false);
 		ds.setRollbackOnReturn(true);
@@ -71,3 +69,4 @@ public class ServiceManager {
 		return ds;
 	}
 }
+

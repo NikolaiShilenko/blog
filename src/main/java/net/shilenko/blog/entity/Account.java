@@ -7,14 +7,11 @@ import java.sql.Timestamp;
  *
  */
 public class Account extends AbstractEntity<Long> {
-
-	private static final long serialVersionUID = 3581139302917967102L;
-
+	private static final long serialVersionUID = 4985140263650384824L;
 	private String email;
 	private String name;
 	private String avatar;
 	private Timestamp created;
-	
 	public String getEmail() {
 		return email;
 	}
@@ -39,14 +36,10 @@ public class Account extends AbstractEntity<Long> {
 	public void setCreated(Timestamp created) {
 		this.created = created;
 	}
-	
-	public boolean isAvatarExists() {
+	public boolean isAvatarExists(){
 		return avatar != null;
 	}
-	
-	public String getNoAvatar() {
+	public String getNoAvatar(){
 		return "/static/img/no_avatar.png";
 	}
-	
-	
 }

@@ -1,13 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
-
 <div class="media-object comment-item">
 	<div class="media-object-section">
 		<img src="http://placehold.it/80x80" alt="Christopher" class="avatar">
 	</div>
 	<div class="media-object-section">
 		<h5 class="name">Christopher</h5>
-		<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Aenean imperdiet. Pellentesque habitant morbi tristique senectus et
-			netus et malesuada fames ac turpis egestas.</p>
+		<p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Aenean imperdiet. Pellentesque habitant morbi tristique
+			senectus et netus et malesuada fames ac turpis egestas.</p>
 		<p class="meta">
 			<small>06.02.2016 11:02</small> | <a href="#">Reply</a>
 		</p>
@@ -68,8 +67,8 @@
 	</div>
 	<div class="media-object-section">
 		<h5 class="name">Domingo</h5>
-		<p>Duis leo. Nullam accumsan lorem in dui. In consectetuer turpis ut velit. Fusce vulputate eleifend sapien. Donec sodales sagittis magna.
-			Praesent blandit laoreet nibh.</p>
+		<p>Duis leo. Nullam accumsan lorem in dui. In consectetuer turpis ut velit. Fusce vulputate eleifend sapien. Donec sodales sagittis
+			magna. Praesent blandit laoreet nibh.</p>
 		<p class="meta">
 			<small>10.12.2015 2:14</small> | <a href="#">Reply</a>
 		</p>
@@ -94,8 +93,8 @@
 	</div>
 	<div class="media-object-section">
 		<h5 class="name">Junior</h5>
-		<p>Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Etiam imperdiet imperdiet orci. Nunc nonummy metus. Morbi mattis
-			ullamcorper velit. Fusce pharetra convallis urna.</p>
+		<p>Praesent metus tellus, elementum eu, semper a, adipiscing nec, purus. Etiam imperdiet imperdiet orci. Nunc nonummy metus. Morbi
+			mattis ullamcorper velit. Fusce pharetra convallis urna.</p>
 		<p class="meta">
 			<small>18.11.2015 17:05</small> | <a href="#">Reply</a>
 		</p>
@@ -108,8 +107,8 @@
 	<div class="media-object-section">
 		<h5 class="name">Tyler</h5>
 		<p>Quisque ut nisi. In hac habitasse platea dictumst. Pellentesque posuere. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,
-			lorem. Vestibulum fringilla pede sit amet augue. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a
-			libero.</p>
+			lorem. Vestibulum fringilla pede sit amet augue. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi
+			a libero.</p>
 		<p class="meta">
 			<small>04.11.2015 23:57</small> | <a href="#">Reply</a>
 		</p>

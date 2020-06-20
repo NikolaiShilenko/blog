@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
-
 <div class="callout primary" style="margin: 0;">
 	<div class="row">
 		<div class="large-6 medium-6 columns">

@@ -7,29 +7,20 @@ import java.sql.Timestamp;
  *
  */
 public class Comment extends AbstractEntity<Long> {
-
-	private static final long serialVersionUID = 7701319921892232044L;
-	
-	private Account account;
+	private static final long serialVersionUID = 4680060138840681511L;
 	private Long idArticle;
-	private String contetnt;
+	private Account account;
+	private String content;
 	private Timestamp created;
-	
 	public Comment() {
 		super();
 	}
-	public Comment(Account account, Long idArticle, String contetnt, Timestamp created) {
+	public Comment(Long idArticle, Account account, String content, Timestamp created) {
 		super();
-		this.account = account;
 		this.idArticle = idArticle;
-		this.contetnt = contetnt;
-		this.created = created;
-	}
-	public Account getAccount() {
-		return account;
-	}
-	public void setAccount(Account account) {
 		this.account = account;
+		this.content = content;
+		this.created = created;
 	}
 	public Long getIdArticle() {
 		return idArticle;
@@ -37,11 +28,17 @@ public class Comment extends AbstractEntity<Long> {
 	public void setIdArticle(Long idArticle) {
 		this.idArticle = idArticle;
 	}
-	public String getContetnt() {
-		return contetnt;
+	public Account getAccount() {
+		return account;
 	}
-	public void setContetnt(String contetnt) {
-		this.contetnt = contetnt;
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
 	}
 	public Timestamp getCreated() {
 		return created;

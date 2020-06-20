@@ -1,5 +1,4 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
-
 <div class="row">
 	<div class="small-12 medium-6 large-5 columns">
 		<p class="logo">

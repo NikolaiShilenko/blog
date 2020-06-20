@@ -15,7 +15,7 @@ import net.shilenko.blog.controller.AbstractController;
  */
 @WebServlet("/search")
 public class SearchController extends AbstractController {
-	private static final long serialVersionUID = -1474332365208695415L;
+	private static final long serialVersionUID = 7089871282763553056L;
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

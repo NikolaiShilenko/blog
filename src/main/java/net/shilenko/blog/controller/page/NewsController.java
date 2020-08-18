@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import net.shilenko.blog.Constants;
 import net.shilenko.blog.controller.AbstractController;
 import net.shilenko.blog.entity.Article;
+import net.shilenko.blog.entity.Category;
 import net.shilenko.blog.model.Items;
 
 /**
@@ -28,7 +29,10 @@ public class NewsController extends AbstractController {
 			items = getBusinessService().listArticles(0, Constants.LIMIT_ARTICLES_PER_PAGE);
 		}
 		else{
-			//TODO display articles for category
+			String categoryUrl = requestUrl.replace("/news", "");
+			items = getBusinessService().listArticlesByCategory(categoryUrl, 0, Constants.LIMIT_ARTICLES_PER_PAGE);
+			Category category = getBusinessService().findCategoryByUrl(categoryUrl);
+			req.setAttribute("selectedCategory", category);
 		}
 		req.setAttribute("list", items.getItems());
 		forwardToPage("news.jsp", req, resp);

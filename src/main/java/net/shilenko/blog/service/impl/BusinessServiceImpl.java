@@ -10,6 +10,7 @@ import net.shilenko.blog.dao.SQLDAO;
 import net.shilenko.blog.entity.Article;
 import net.shilenko.blog.entity.Category;
 import net.shilenko.blog.exception.ApplicationException;
+import net.shilenko.blog.exception.RedirectToValidUrlException;
 import net.shilenko.blog.model.Items;
 import net.shilenko.blog.service.BusinessService;
 
@@ -80,4 +81,25 @@ class BusinessServiceImpl implements BusinessService {
 			throw new ApplicationException("Can't execute db command: " + e.getMessage(), e);
 		}
 	}
+	
+	@Override
+	public Article viewArticle(Long idArticle, String requestUrl) throws RedirectToValidUrlException {
+		try (Connection c = dataSource.getConnection()) {
+			Article article = sql.findArticleById(c, idArticle);
+			if (article == null) {
+				return null;
+			}
+			if (!article.getArticleLink().equals(requestUrl)) {
+				throw new RedirectToValidUrlException(article.getArticleLink());
+			} else {
+				article.setViews(article.getViews() + 1);
+				sql.updateArticleViews(c, article);
+				c.commit();
+				return article;
+			}
+		} catch (SQLException e) {
+			throw new ApplicationException("Can't execute db command: " + e.getMessage(), e);
+		}
+	}
 }
+

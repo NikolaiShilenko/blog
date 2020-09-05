@@ -2,6 +2,7 @@ package net.shilenko.blog.service.impl;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Map;
 
 import javax.sql.DataSource;
@@ -9,6 +10,7 @@ import javax.sql.DataSource;
 import net.shilenko.blog.dao.SQLDAO;
 import net.shilenko.blog.entity.Article;
 import net.shilenko.blog.entity.Category;
+import net.shilenko.blog.entity.Comment;
 import net.shilenko.blog.exception.ApplicationException;
 import net.shilenko.blog.exception.RedirectToValidUrlException;
 import net.shilenko.blog.model.Items;
@@ -101,5 +103,13 @@ class BusinessServiceImpl implements BusinessService {
 			throw new ApplicationException("Can't execute db command: " + e.getMessage(), e);
 		}
 	}
+	
+	@Override
+	public List<Comment> listComments(long idArticle, int offset, int limit) {
+		try (Connection c = dataSource.getConnection()) {
+			return sql.listComments(c, idArticle, offset, limit);
+		} catch (SQLException e) {
+			throw new ApplicationException("Can't execute db command: " + e.getMessage(), e);
+		}
+	}
 }
-

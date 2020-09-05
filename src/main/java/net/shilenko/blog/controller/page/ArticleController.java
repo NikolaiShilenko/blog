@@ -1,6 +1,7 @@
 package net.shilenko.blog.controller.page;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,8 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang.StringUtils;
 
+import net.shilenko.blog.Constants;
 import net.shilenko.blog.controller.AbstractController;
 import net.shilenko.blog.entity.Article;
+import net.shilenko.blog.entity.Comment;
 import net.shilenko.blog.exception.RedirectToValidUrlException;
 
 /**
@@ -32,6 +35,8 @@ public class ArticleController extends AbstractController {
 			}
 			else{
 				req.setAttribute("article", article);
+				List<Comment> comments = getBusinessService().listComments(article.getId(), 0, Constants.LIMIT_COMMENTS_PER_PAGE);
+				req.setAttribute("comments", comments);
 				forwardToPage("article.jsp", req, resp);
 			}
 		}  catch (RedirectToValidUrlException e) {
@@ -41,3 +46,4 @@ public class ArticleController extends AbstractController {
 		}
 	}
 }
+

@@ -1,9 +1,11 @@
 package net.shilenko.blog.service;
 
+import java.util.List;
 import java.util.Map;
 
 import net.shilenko.blog.entity.Article;
 import net.shilenko.blog.entity.Category;
+import net.shilenko.blog.entity.Comment;
 import net.shilenko.blog.exception.RedirectToValidUrlException;
 import net.shilenko.blog.model.Items;
 
@@ -30,4 +32,6 @@ public interface BusinessService {
 	 * @return null if entity not found by idArticle
 	 */
 	Article viewArticle(Long idArticle, String requestUrl) throws RedirectToValidUrlException;
+	
+	List<Comment> listComments(long idArticle, int offset, int limit);
 }
